@@ -5,11 +5,13 @@ from tensorflow.keras.models import load_model
 # Título de la aplicación
 st.title("Predicciones de 'No Cobro'")
 st.markdown("---")
-st.write("Este es un proyecto desarrollado por Marcela Zapata y Gabriel Azorín, en el contexto del curso de 'Deep Learning para Políticas Públicas', llevado a cabo por el Instituto de Previsión Social (IPS) y la Universidad Adolfo Ibañez.")
+st.write("Este es un proyecto desarrollado por Marcela Zapata y Gabriel Azorín, en el contexto del curso de 'Deep Learning para Políticas Públicas', llevado a cabo por el Instituto de Previsión Social (IPS) y la Universidad Adolfo Ibañez (UAI).")
 st.markdown("---")
 st.write("### ¿Para qué sirve?")
 st.write("Esta página contiene un modelo de Deep Learning entrenado para determinar si es que un beneficiario del IPS va a cobrar o no su bono, pensión, o lo que sea.\nPara probarlo, se le puede cargar un archivo .csv con las características de la persona:")
-st.write()
+st.write("- Cuántos pagos tiene.\n- Cuál es el monto que se le debe.\n- De qué comuna y región es.\n- Qué tan urbanizado es el sector en el que vive.\n- Cuál es su forma de pago\n- Qué beneficio es.\n- Si cobró o no el Aporte Familiar Permanente.\n- Su fecha de nacimiento.\n- Sexo.\n- Estado civil.\n- Nacionalidad.")
+st.markdown("---")
+st.write("### <--- Pruébalo :)")
 
 # Subir archivo CSV para predicción
 st.sidebar.header("Sube tu archivo CSV")
