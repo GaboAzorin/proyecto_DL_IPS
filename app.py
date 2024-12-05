@@ -13,10 +13,10 @@ st.write()
 
 # Subir archivo CSV para predicción
 st.sidebar.header("Sube tu archivo CSV")
-st.sidebar.file_uploader("Sube tu archivo CSV para predicciones", type=["csv"])
+uploaded_file = st.sidebar.file_uploader("Sube tu archivo CSV para predicciones", type=["csv"])
 
 # Subir archivo CSV para predicción
-uploaded_file = st.file_uploader("Sube tu archivo CSV para predicciones", type=["csv"])
+#uploaded_file = st.file_uploader("Sube tu archivo CSV para predicciones", type=["csv"])
 
 # Cargar el modelo entrenado
 @st.cache_resource
