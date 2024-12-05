@@ -3,7 +3,16 @@ import pandas as pd
 from tensorflow.keras.models import load_model
 
 # Título de la aplicación
-st.title("Predicciones de 'No Cobro' - Proyecto DL IPS-UAI - Marcela Zapata y Gabriel Azorín")
+st.title("Predicciones de 'No Cobro'")
+st.markdown("---")
+st.write("Este es un proyecto desarrollado por Marcela Zapata y Gabriel Azorín, en el contexto del curso de 'Deep Learning para Políticas Públicas', llevado a cabo por el Instituto de Previsión Social (IPS) y la Universidad Adolfo Ibañez.")
+st.markdown("---")
+st.write("### ¿Para qué sirve?")
+st.write("Esta página contiene un modelo de Deep Learning entrenado para determinar si es que un beneficiario del IPS va a cobrar o no su bono, pensión, o lo que sea.\nPara probarlo, se le puede cargar un archivo .csv con las características de la persona:")
+st.write()
+
+# Subir archivo CSV para predicción
+st.sidebar.header("Sube tu archivo CSV")
 
 # Subir archivo CSV para predicción
 uploaded_file = st.file_uploader("Sube tu archivo CSV para predicciones", type=["csv"])
