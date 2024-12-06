@@ -2,6 +2,13 @@ import streamlit as st
 import pandas as pd
 from tensorflow.keras.models import load_model
 
+#Cambio de título de página
+st.set_page_config(
+   page_title="Proyecto DL",
+   layout="wide",
+   initial_sidebar_state="expanded",
+)
+
 # Título de la aplicación
 st.title("Predicciones de 'No Cobro'")
 st.markdown("---")
